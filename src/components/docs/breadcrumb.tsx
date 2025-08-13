@@ -16,7 +16,7 @@ const Breadcrumb = ({ items, className }: BreadcrumbProps) => {
   return (
     <nav aria-label="breadcrumb" className={cn("flex items-center space-x-1 text-sm text-muted-foreground", className)}>
       <Link 
-        href="/" 
+        href="/introduction" 
         className="flex items-center hover:text-foreground transition-colors"
       >
         <Home className="h-4 w-4" />

@@ -29,7 +29,7 @@ const Header = () => {
 
         {/* 로고 */}
         <div className="mr-4 hidden lg:flex">
-          <Link href="/" className="mr-6 flex items-center space-x-2">
+          <Link href="/introduction" className="mr-6 flex items-center space-x-2">
             <span className="font-bold">NestJS 한국어 문서</span>
           </Link>
         </div>
@@ -123,7 +123,7 @@ const Header = () => {
 const MobileNav = () => {
   return (
     <div className="flex flex-col space-y-3">
-      <Link href="/" className="flex items-center space-x-2">
+      <Link href="/introduction" className="flex items-center space-x-2">
         <div className="h-6 w-6 bg-red-600 rounded"></div>
         <span className="font-bold">NestJS 한국어 문서</span>
       </Link>
