@@ -128,6 +128,13 @@ src/
 - Use consistent Korean technical writing style
 - Include original English terms in parentheses when helpful
 
+### ESLint & Build Guidelines
+- **Quote Escaping**: Use HTML entities in JSX content to avoid build errors
+  - `"` → `&quot;` for double quotes
+  - `'` → `&apos;` for apostrophes/single quotes
+- Remove unused imports to pass ESLint validation
+- Ensure all imports are actually used in components
+
 ### Styling Preferences
 - Clean, modern design similar to official NestJS docs
 - Good contrast and readability
