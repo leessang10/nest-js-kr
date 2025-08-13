@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
-import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 
 interface NavigationItem {

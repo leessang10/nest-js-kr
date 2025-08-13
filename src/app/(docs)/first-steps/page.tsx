@@ -1,9 +1,9 @@
 import Breadcrumb from '@/components/docs/breadcrumb'
 import CodeBlock from '@/components/docs/code-block'
 import PageNavigation from '@/components/docs/page-navigation'
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
+import { Card, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
-import { Play, FileText, Folder } from 'lucide-react'
+import { FileText } from 'lucide-react'
 
 export default function FirstStepsPage() {
   return (
@@ -183,7 +183,7 @@ bootstrap();`}
           <p className="text-muted-foreground mt-4">
             이 명령은 <code className="bg-muted px-1 py-0.5 rounded">src/main.ts</code> 파일에 정의된 포트에서 HTTP 서버를 시작합니다. 
             애플리케이션이 실행 중인 상태에서 브라우저를 열고 <code className="bg-muted px-1 py-0.5 rounded">http://localhost:3000/</code>으로 이동하면 
-            "Hello World!" 메시지를 볼 수 있습니다.
+            &quot;Hello World!&quot; 메시지를 볼 수 있습니다.
           </p>
           
           <p className="text-muted-foreground">

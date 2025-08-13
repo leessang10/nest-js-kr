@@ -1,8 +1,7 @@
 import Breadcrumb from '@/components/docs/breadcrumb'
 import CodeBlock from '@/components/docs/code-block'
 import PageNavigation from '@/components/docs/page-navigation'
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
-import { Badge } from '@/components/ui/badge'
+import { Card, CardContent } from '@/components/ui/card'
 import { Package, ArrowDownUp, Settings, Database } from 'lucide-react'
 
 export default function ProvidersPage() {
@@ -169,7 +168,7 @@ export class CatsController {
         <section>
           <h2 id="scopes" className="text-2xl font-semibold mb-4">스코프</h2>
           <p className="text-muted-foreground mb-4">
-            프로바이더는 보통 애플리케이션 라이프사이클과 동기화된 수명 ("스코프")을 가집니다. 애플리케이션이 부트스트랩되면, 
+            프로바이더는 보통 애플리케이션 라이프사이클과 동기화된 수명 (&quot;스코프&quot;)을 가집니다. 애플리케이션이 부트스트랩되면,
             모든 의존성이 해결되어야 하므로 모든 프로바이더가 인스턴스화됩니다. 마찬가지로, 애플리케이션이 종료되면, 
             각 프로바이더가 소멸될 것입니다. 그러나 프로바이더 수명을 <strong>요청-스코프</strong>로 만드는 방법도 있습니다. 
             이러한 기술에 대한 자세한 내용은 <strong>여기서</strong> 읽을 수 있습니다.
@@ -180,7 +179,7 @@ export class CatsController {
         <section>
           <h2 id="custom-providers" className="text-2xl font-semibold mb-4">사용자 정의 프로바이더</h2>
           <p className="text-muted-foreground mb-4">
-            Nest에는 프로바이더 간의 관계를 해결하는 내장 제어 역전 ("IoC") 컨테이너가 있습니다. 
+            Nest에는 프로바이더 간의 관계를 해결하는 내장 제어 역전 (&quot;IoC&quot;) 컨테이너가 있습니다.
             이 기능은 위에서 설명한 의존성 주입 기능의 기초가 되지만, 실제로는 지금까지 설명한 것보다 훨씬 더 강력합니다. 
             프로바이더를 정의하는 몇 가지 방법이 있습니다: 평범한 값, 클래스, 그리고 비동기 또는 동기 팩토리를 사용할 수 있습니다.
           </p>
@@ -197,7 +196,7 @@ export class CatsController {
         <section>
           <h2 id="optional-providers" className="text-2xl font-semibold mb-4">선택적 프로바이더</h2>
           <p className="text-muted-foreground mb-4">
-            때때로, 반드시 해결될 필요가 없는 의존성이 있을 수 있습니다. 예를 들어, 클래스가 <strong>구성 객체</strong>에 
+            때때로, 반드시 해결될 필요가 없는 의존성이 있을 수 있습니다. 예를 들어, 클래스가 <strong>&quot;구성 객체&quot;</strong>에 
             의존할 수 있지만, 아무것도 전달되지 않으면 기본값이 사용되어야 합니다. 이러한 경우, 
             구성 프로바이더의 부재가 오류로 이어지지 않기 때문에 의존성은 선택적이 됩니다.
           </p>
@@ -244,7 +243,7 @@ export class HttpService<T> {
 
           <div className="mt-4 p-4 bg-amber-50 border border-amber-200 rounded-lg">
             <p className="text-sm text-amber-800">
-              <strong>주의:</strong> 클래스가 다른 클래스를 확장하지 않는 경우, 항상 <strong>생성자 기반</strong> 주입을 
+              <strong>주의:</strong> 클래스가 다른 클래스를 확장하지 않는 경우, 항상 <strong>&quot;생성자 기반&quot;</strong> 주입을 
               사용하는 것을 선호해야 합니다.
             </p>
           </div>

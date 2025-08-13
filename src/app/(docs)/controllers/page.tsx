@@ -1,8 +1,7 @@
 import Breadcrumb from '@/components/docs/breadcrumb'
 import CodeBlock from '@/components/docs/code-block'
 import PageNavigation from '@/components/docs/page-navigation'
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
-import { Badge } from '@/components/ui/badge'
+import { Card, CardContent } from '@/components/ui/card'
 import { Route, Globe, ArrowRight } from 'lucide-react'
 
 export default function ControllersPage() {
@@ -182,7 +181,7 @@ findAll() {
           </CodeBlock>
 
           <p className="text-muted-foreground">
-            <code className="bg-muted px-1 py-0.5 rounded">'ab*cd'</code> 라우트 경로는 <code className="bg-muted px-1 py-0.5 rounded">abcd</code>, 
+            <code className="bg-muted px-1 py-0.5 rounded">&apos;ab*cd&apos;</code> 라우트 경로는 <code className="bg-muted px-1 py-0.5 rounded">abcd</code>, 
             <code className="bg-muted px-1 py-0.5 rounded">ab_cd</code>, <code className="bg-muted px-1 py-0.5 rounded">abecd</code> 등과 일치합니다. 
             문자 <code className="bg-muted px-1 py-0.5 rounded">?</code>, <code className="bg-muted px-1 py-0.5 rounded">+</code>, 
             <code className="bg-muted px-1 py-0.5 rounded">*</code>, <code className="bg-muted px-1 py-0.5 rounded">()</code>은 라우트 경로에 사용될 수 있으며 

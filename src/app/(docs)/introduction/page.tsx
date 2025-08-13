@@ -1,8 +1,7 @@
 import Breadcrumb from '@/components/docs/breadcrumb'
 import CodeBlock from '@/components/docs/code-block'
 import PageNavigation from '@/components/docs/page-navigation'
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
-import { Badge } from '@/components/ui/badge'
+import { Card, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { CheckCircle, Zap, Shield, Code } from 'lucide-react'
 
 export default function IntroductionPage() {
@@ -73,13 +72,13 @@ export default function IntroductionPage() {
         <section>
           <h2 id="philosophy" className="text-2xl font-semibold mb-4">철학</h2>
           <p className="text-muted-foreground mb-4">
-            최근 몇 년간 Node.js 덕분에 JavaScript는 프론트엔드와 백엔드 애플리케이션 모두에서 웹의 "공용어"가 되었습니다. 
+            최근 몇 년간 Node.js 덕분에 JavaScript는 프론트엔드와 백엔드 애플리케이션 모두에서 웹의 &quot;공용어&quot;가 되었습니다.
             이로 인해 Angular, React, Vue와 같은 훌륭한 프로젝트들이 등장하여 개발자 생산성을 향상시키고 빠르고 테스트 가능하며 
             확장 가능한 프론트엔드 애플리케이션을 만들 수 있게 되었습니다.
           </p>
           <p className="text-muted-foreground mb-4">
             하지만 Node.js를 위한 수많은 훌륭한 라이브러리, 헬퍼, 도구들이 존재하지만, 이들 중 어느 것도 주요 문제인 
-            <strong>아키텍처</strong>를 효과적으로 해결하지 못합니다.
+            <strong>&quot;아키텍처&quot;</strong>를 효과적으로 해결하지 못합니다.
           </p>
           <p className="text-muted-foreground">
             NestJS는 개발자와 팀이 고도로 테스트 가능하고, 확장 가능하며, 느슨하게 결합되고, 

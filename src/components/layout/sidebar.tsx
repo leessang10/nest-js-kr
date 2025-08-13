@@ -4,7 +4,6 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { ChevronRight, ChevronDown, Book, Code, Shield, Database, Zap, Settings } from 'lucide-react'
 import { cn } from '@/lib/utils'
-import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { useState } from 'react'
 
