@@ -1,36 +1,137 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# NestJS Korean Documentation Site Development
 
-## Getting Started
+Create a Korean documentation website based on the NestJS official documentation structure (https://docs.nestjs.com/). This will be a Next.js application with shadcn/ui components, deployed on Vercel.
 
-First, run the development server:
+## Project Requirements
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+### Tech Stack
+- **Framework**: Next.js 14+ (App Router)
+- **UI Library**: shadcn/ui components
+- **Styling**: Tailwind CSS
+- **Deployment**: Vercel
+- **Language**: TypeScript
+
+### Site Structure & Layout
+1. **Header Navigation**
+    - Logo/Brand
+    - Main navigation menu (Introduction, Fundamentals, Techniques, etc.)
+    - Search functionality (placeholder for now)
+    - Language toggle (EN/KR - placeholder)
+    - GitHub link
+
+2. **Sidebar Navigation**
+    - Collapsible sections matching NestJS docs structure
+    - Current page highlighting
+    - Smooth scrolling to sections
+
+3. **Main Content Area**
+    - Breadcrumb navigation
+    - Article content with proper typography
+    - Code syntax highlighting
+    - Table of contents (right sidebar)
+    - Previous/Next navigation
+
+4. **Footer**
+    - Links and copyright information
+
+### Initial Content Strategy
+**Phase 1: Hard-coded React Components**
+- Create the basic layout and navigation structure
+- Implement 3-5 key pages as React components with hard-coded Korean content
+- Focus on: Introduction, Installation, First Steps, Controllers, Providers
+
+**Phase 2: Markdown Rendering (Future)**
+- Prepare the architecture to support markdown file rendering
+- Consider using MDX or next-mdx-remote for future content management
+
+### Key Features to Implement
+
+1. **Responsive Design**
+    - Mobile-friendly sidebar (collapsible hamburger menu)
+    - Tablet and desktop optimized layouts
+
+2. **Code Highlighting**
+    - Use Prism.js or highlight.js
+    - Support for TypeScript, JavaScript, JSON, Shell commands
+
+3. **Component Library Integration**
+    - Utilize shadcn/ui components: Button, Card, Tabs, Accordion, etc.
+    - Consistent design system following modern documentation sites
+
+4. **SEO Optimization**
+    - Proper meta tags and Open Graph tags
+    - Structured data for documentation
+
+5. **Performance**
+    - Image optimization
+    - Code splitting
+    - Fast page loads
+
+### File Structure
+```
+src/
+├── app/
+│   ├── layout.tsx
+│   ├── page.tsx
+│   ├── globals.css
+│   └── (docs)/
+│       ├── introduction/
+│       ├── fundamentals/
+│       ├── techniques/
+│       └── [...slug]/
+├── components/
+│   ├── ui/ (shadcn components)
+│   ├── layout/
+│   │   ├── Header.tsx
+│   │   ├── Sidebar.tsx
+│   │   └── Footer.tsx
+│   ├── docs/
+│   │   ├── CodeBlock.tsx
+│   │   ├── TableOfContents.tsx
+│   │   └── Navigation.tsx
+├── lib/
+│   └── utils.ts
+└── styles/
+    └── globals.css
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Development Steps
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. **Initialize Project**
+    - Create Next.js project with TypeScript
+    - Install and configure shadcn/ui
+    - Setup Tailwind CSS with custom theme
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. **Build Core Layout**
+    - Create responsive header with navigation
+    - Implement collapsible sidebar with NestJS doc structure
+    - Design main content layout with proper spacing
 
-## Learn More
+3. **Content Components**
+    - Create reusable components for documentation elements
+    - Implement code syntax highlighting
+    - Build table of contents component
 
-To learn more about Next.js, take a look at the following resources:
+4. **Sample Pages**
+    - Create 5 key documentation pages in Korean
+    - Ensure consistent styling and navigation
+    - Add proper meta tags and SEO
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+5. **Testing & Optimization**
+    - Test responsive design across devices
+    - Optimize performance and loading speeds
+    - Verify accessibility standards
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Content Guidelines
+- Translate technical terms appropriately (keep some English terms when commonly used)
+- Maintain code examples in original format but add Korean explanations
+- Use consistent Korean technical writing style
+- Include original English terms in parentheses when helpful
 
-## Deploy on Vercel
+### Styling Preferences
+- Clean, modern design similar to official NestJS docs
+- Good contrast and readability
+- Consistent spacing and typography
+- Subtle animations and hover effects
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Please start by setting up the project structure and creating the basic layout components. Focus on making the foundation solid and extensible for future content additions.
